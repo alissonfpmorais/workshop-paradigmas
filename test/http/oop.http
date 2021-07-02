@@ -1,0 +1,49 @@
+POST {{base_url_oop}}/user
+Content-Type: application/json
+
+{
+  "firstName": "alisson",
+  "lastName": "morais",
+  "email": "alisson.morais@olhonocarro.com.br"
+}
+
+###
+
+GET {{base_url_oop}}/user/1
+
+###
+
+POST {{base_url_oop}}/user/deposit
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "amount": "50.49"
+}
+
+###
+
+POST {{base_url_oop}}/user/withdraw
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "amount": "12.8"
+}
+
+###
+
+GET {{base_url_oop}}/user/balance/2
+
+###
+
+POST {{base_url_oop}}/transaction/transference
+Content-Type: application/json
+
+{
+  "fromUserId": 1,
+  "toUserId": 2,
+  "amount": "3.91"
+}
+
+###
